@@ -10,14 +10,13 @@ find_sim_2(X,Y):- movie_title(X),
 
 find_sim_3(X,Y):- movie_title(X),
                   similar_genres(X,Y1), 
-                  same_language(X,Y3),
-                  common_production_country(X,Y4),
+                  same_language(X,Y2),
+                  common_production_country(X,Y3),
                   color(X, C),
-                  findall(M, color(M,C), Y5),
-                  intersection(Y1,Y2,Y6),
-                  intersection(Y3,Y4,Y7),
-                  intersection(Y5,Y6,Y8),
-                  intersection(Y7,Y8,Y).
+                  findall(M, color(M,C), Y4),
+                  intersection(Y1,Y2,Y5),
+                  intersection(Y3,Y4,Y6),
+                  intersection(Y5,Y6,Y).
 
 find_sim_4(X,Y):- movie_title(X),
                   similar_genres(X,Y1), 
