@@ -47,4 +47,4 @@ find_sim_5(X,Y):- movie_title(X),
                   intersection(Y7,Y8,Y11),
                   intersection(Y9,Y10,Y12),
                   intersection(Y11,Y12,Y).
-
+                  
